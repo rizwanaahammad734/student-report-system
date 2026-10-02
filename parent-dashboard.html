@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Module | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-role-page="parent">
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="parent-dashboard.html">👨‍👩‍👧 Parent Module</a>
+        <nav>
+            <a href="parent-dashboard.html">Dashboard</a>
+            <a href="report.html">Student Report</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="dashboard-head">
+        <div>
+            <span class="badge">USER MODULE • PARENT</span>
+            <h2>Parent Dashboard</h2>
+            <p id="parentWelcome"></p>
+        </div>
+    </section>
+
+    <section class="profile-grid">
+        <div><span>🎓</span><b>Student</b><strong>Amrutha</strong></div>
+        <div><span>🆔</span><b>Roll Number</b><strong>101</strong></div>
+        <div><span>📅</span><b>Attendance</b><strong>92%</strong></div>
+        <div><span>🏆</span><b>Overall Grade</b><strong>A</strong></div>
+    </section>
+
+    <section class="panel">
+        <h2>Student Progress</h2>
+        <div class="card-grid">
+            <article class="dashboard-card purple-card"><span>📄</span><h3>Student Report</h3><p>Check marks, grades, attendance and teacher remarks.</p><a href="report.html" class="btn primary small">View Report</a></article>
+            <article class="dashboard-card orange-card"><span>📈</span><h3>Performance Analytics</h3><p>View subject performance and academic summary.</p><a href="analytics.html" class="btn orange small">View Analytics</a></article>
+        </div>
+    </section>
+</main>
+
+<footer><p>User Module • Parent • Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

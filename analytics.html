@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-protected="true">
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="#">📈 Performance Analytics</a>
+        <nav>
+            <a href="#" id="dashboardLink">Dashboard</a>
+            <a href="report.html">Report</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="dashboard-head">
+        <div>
+            <span class="badge">PERFORMANCE ANALYTICS</span>
+            <h2>Student Performance Trends</h2>
+            <p>Visual summary of the current academic report.</p>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat purple"><span>📊</span><h3 id="avgStat">84.3%</h3><p>Average Marks</p></div>
+        <div class="stat blue"><span>📅</span><h3 id="attendanceStat">92%</h3><p>Attendance</p></div>
+        <div class="stat green"><span>🏆</span><h3 id="gradeStat">A</h3><p>Overall Grade</p></div>
+    </section>
+
+    <section class="panel">
+        <h2>Subject Performance</h2>
+        <div class="bars">
+            <div class="bar-line"><span>Python</span><div><i id="pythonBar"></i></div><b id="pythonValue">85</b></div>
+            <div class="bar-line"><span>Java</span><div><i id="javaBar"></i></div><b id="javaValue">78</b></div>
+            <div class="bar-line"><span>DBMS</span><div><i id="dbmsBar"></i></div><b id="dbmsValue">90</b></div>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Interpretation</h2>
+        <p id="analyticsText">Performance is calculated from the marks stored in the student report.</p>
+    </section>
+</main>
+
+<footer><p>Analytics • Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

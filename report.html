@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Student Report | Student Report System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-protected="true">
+
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div class="container nav">
+
+            <a class="brand" href="#">
+                📄 Student Report
+            </a>
+
+
+            <nav>
+
+                <a href="#" id="dashboardLink">
+                    Dashboard
+                </a>
+
+                <a href="analytics.html">
+                    Analytics
+                </a>
+
+                <a href="#" id="logoutBtn">
+                    Logout
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="container page">
+
+
+        <!-- REPORT HEADER -->
+
+        <section class="report-header">
+
+            <div>
+
+                <span class="badge">
+                    ACADEMIC REPORT
+                </span>
+
+                <h2>
+                    Student Progress Report
+                </h2>
+
+                <p>
+                    Manage grades, attendance and teacher remarks.
+                </p>
+
+            </div>
+
+
+            <div class="student-chip">
+                🎓 Amrutha • 101
+            </div>
+
+        </section>
+
+
+        <!-- STUDENT INFORMATION -->
+
+        <section class="profile-grid">
+
+            <div>
+
+                <b>Name</b>
+
+                <strong>
+                    Amrutha
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <b>Roll Number</b>
+
+                <strong>
+                    101
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <b>Class</b>
+
+                <strong>
+                    AI & DS - 2nd Year
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <b>Attendance</b>
+
+                <strong id="attendanceValue">
+                    92%
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACADEMIC PERFORMANCE -->
+
+        <section class="panel">
+
+
+            <div class="panel-title">
+
+                <div>
+
+                    <h2>
+                        📚 Academic Performance
+                    </h2>
+
+                    <p>
+                        Teacher can update the student's marks.
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="editReportBtn"
+                    class="btn primary small"
+                >
+                    Edit Report
+                </button>
+
+            </div>
+
+
+            <!-- MARKS TABLE -->
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Subject
+                            </th>
+
+                            <th>
+                                Marks
+                            </th>
+
+                            <th>
+                                Grade
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- PYTHON -->
+
+                        <tr>
+
+                            <td>
+                                Python
+                            </td>
+
+                            <td>
+
+                                <input
+                                    class="mark-input"
+                                    id="pythonMarks"
+                                    type="number"
+                                    min="0"
+                                    max="100"
+                                    value="85"
+                                    disabled
+                                >
+
+                            </td>
+
+                            <td id="pythonGrade">
+                                A
+                            </td>
+
+                        </tr>
+
+
+                        <!-- JAVA -->
+
+                        <tr>
+
+                            <td>
+                                Java
+                            </td>
+
+                            <td>
+
+                                <input
+                                    class="mark-input"
+                                    id="javaMarks"
+                                    type="number"
+                                    min="0"
+                                    max="100"
+                                    value="78"
+                                    disabled
+                                >
+
+                            </td>
+
+                            <td id="javaGrade">
+                                B
+                            </td>
+
+                        </tr>
+
+
+                        <!-- DBMS -->
+
+                        <tr>
+
+                            <td>
+                                DBMS
+                            </td>
+
+                            <td>
+
+                                <input
+                                    class="mark-input"
+                                    id="dbmsMarks"
+                                    type="number"
+                                    min="0"
+                                    max="100"
+                                    value="90"
+                                    disabled
+                                >
+
+                            </td>
+
+                            <td id="dbmsGrade">
+                                A+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- TEACHER CONTROLS -->
+
+            <div
+                id="teacherControls"
+                class="edit-area hidden"
+            >
+
+
+                <!-- ATTENDANCE -->
+
+                <label for="attendanceInput">
+                    📅 Overall Attendance (%)
+                </label>
+
+                <input
+                    id="attendanceInput"
+                    type="number"
+                    min="0"
+                    max="100"
+                    value="92"
+                >
+
+
+                <!-- REMARKS -->
+
+                <label for="remarksInput">
+                    💬 Teacher Remarks
+                </label>
+
+                <textarea
+                    id="remarksInput"
+                    rows="4"
+                    placeholder="Enter teacher remarks"
+                >Good academic performance. Keep improving practical skills.</textarea>
+
+
+                <!-- SAVE -->
+
+                <button
+                    id="saveReportBtn"
+                    class="btn green"
+                >
+                    💾 Save Report
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- REPORT SUMMARY -->
+
+        <section class="two-col">
+
+
+            <!-- TEACHER REMARKS -->
+
+            <div class="panel">
+
+                <h2>
+                    💬 Teacher Remarks
+                </h2>
+
+                <p id="remarksValue">
+                    Good academic performance. Keep improving practical skills.
+                </p>
+
+            </div>
+
+
+            <!-- OVERALL RESULT -->
+
+            <div class="panel">
+
+                <h2>
+                    📊 Overall Result
+                </h2>
+
+
+                <div class="result-box">
+
+
+                    <strong id="averageValue">
+                        84.3%
+                    </strong>
+
+                    <span>
+                        Average Marks
+                    </span>
+
+
+                    <b id="overallGrade">
+                        A
+                    </b>
+
+                    <span>
+                        Overall Grade
+                    </span>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            User Module • Student Report System
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

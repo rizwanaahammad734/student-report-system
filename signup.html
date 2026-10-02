@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="index.html">🎓 Student Report System</a>
+        <nav><a href="index.html">Home</a><a href="login.html">Login</a></nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="form-card">
+        <div class="form-icon">✨</div>
+        <h2>Create Your Account</h2>
+        <p class="section-subtitle">Register as a Teacher, Student or Parent.</p>
+
+        <form id="signupForm">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Create a password" required minlength="3">
+
+            <label for="role">Select Role</label>
+            <select id="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="parent">Parent</option>
+            </select>
+
+            <button class="btn primary full" type="submit">Create Account</button>
+            <p id="signupMessage" class="message"></p>
+        </form>
+    </section>
+</main>
+
+<footer><p>© 2026 Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Module | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-role-page="admin">
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="admin-dashboard.html">🛡️ Admin Module</a>
+        <nav>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="report.html">Report</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="dashboard-head">
+        <div>
+            <span class="badge">ADMIN MODULE</span>
+            <h2>Admin Dashboard</h2>
+            <p id="adminWelcome"></p>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat purple"><span>👥</span><h3 id="totalUsers">0</h3><p>Total Users</p></div>
+        <div class="stat blue"><span>🎓</span><h3 id="studentUsers">0</h3><p>Students</p></div>
+        <div class="stat green"><span>👨‍🏫</span><h3 id="teacherUsers">0</h3><p>Teachers</p></div>
+        <div class="stat orange"><span>👨‍👩‍👧</span><h3 id="parentUsers">0</h3><p>Parents</p></div>
+    </section>
+
+    <section class="panel">
+        <h2>Manage Users</h2>
+        <div class="table-wrap">
+            <table id="usersTable">
+                <thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Action</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer><p>Admin Module • Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="index.html">🎓 Student Report System</a>
+        <nav><a href="index.html">Home</a><a href="signup.html">Signup</a></nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="form-card">
+        <div class="form-icon">🔐</div>
+        <h2>Login</h2>
+        <p class="section-subtitle">Select your role and enter your account details.</p>
+
+        <form id="loginForm">
+            <label for="loginRole">Role</label>
+            <select id="loginRole" required>
+                <option value="">-- Select Role --</option>
+                <option value="admin">Admin</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="parent">Parent</option>
+            </select>
+
+            <label for="loginUsername">Username</label>
+            <input id="loginUsername" type="text" placeholder="Enter username" required>
+
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" placeholder="Enter password" required>
+
+            <button class="btn primary full" type="submit">Login</button>
+            <p id="loginMessage" class="message"></p>
+        </form>
+
+        <div class="demo-box">
+            <h4>Demo Accounts</h4>
+            <p>Admin → <b>admin</b> / <b>admin123</b></p>
+            <p>Teacher → <b>teacher1</b> / <b>123</b></p>
+            <p>Student → <b>student1</b> / <b>123</b></p>
+            <p>Parent → <b>parent1</b> / <b>123</b></p>
+        </div>
+    </section>
+</main>
+
+<footer><p>© 2026 Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

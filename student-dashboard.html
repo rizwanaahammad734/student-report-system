@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Module | Student Report System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-role-page="student">
+<header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="student-dashboard.html">🎓 Student Module</a>
+        <nav>
+            <a href="student-dashboard.html">Dashboard</a>
+            <a href="report.html">My Report</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="dashboard-head">
+        <div>
+            <span class="badge">USER MODULE • STUDENT</span>
+            <h2>Student Dashboard</h2>
+            <p id="studentWelcome"></p>
+        </div>
+    </section>
+
+    <section class="profile-grid">
+        <div><span>👤</span><b>Name</b><strong>Amrutha</strong></div>
+        <div><span>🆔</span><b>Roll Number</b><strong>101</strong></div>
+        <div><span>🎓</span><b>Class</b><strong>AI & DS - 2nd Year</strong></div>
+        <div><span>📅</span><b>Attendance</b><strong id="studentAttendance">92%</strong></div>
+    </section>
+
+    <section class="panel">
+        <h2>Quick Access</h2>
+        <div class="card-grid">
+            <article class="dashboard-card purple-card"><span>📄</span><h3>My Academic Report</h3><p>View marks, grades, attendance and remarks.</p><a href="report.html" class="btn primary small">View Report</a></article>
+            <article class="dashboard-card blue-card"><span>📊</span><h3>Performance Analytics</h3><p>Understand subject-wise performance.</p><a href="analytics.html" class="btn blue small">View Analytics</a></article>
+        </div>
+    </section>
+</main>
+
+<footer><p>User Module • Student • Student Report System</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
